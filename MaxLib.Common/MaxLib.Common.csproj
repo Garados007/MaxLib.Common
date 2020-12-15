@@ -1,8 +1,18 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
+  <Import Project="MaxLib.Common.csproj.include" />
+
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
     <RootNamespace>MaxLib</RootNamespace>
+    <PackageId>MaxLib.Common</PackageId>
+    <Authors>garados007</Authors>
+    <Company>Max Brauer</Company>
+    <PackageDescription>
+      MaxLib.Common is a common library shared accross the MaxLib.* projects.
+    </PackageDescription>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/Garados007/MaxLib.Common</RepositoryUrl>
   </PropertyGroup>
 
 </Project>
