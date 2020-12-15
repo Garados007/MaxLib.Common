@@ -22,7 +22,7 @@ jobs:
       run: dotnet restore
       
     - name: Publish MaxLib.Common NuGet
-      uses: brandedoutcast/publish-nuget@v2.5.5
+      uses: brandedoutcast/publish-nuget@v2.5.5 
       with:
         # Filepath of the project to be packaged, relative to root of repository
         PROJECT_FILE_PATH: MaxLib.Common/MaxLib.Common.csproj
