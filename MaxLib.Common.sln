@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26124.0
+MinimumVisualStudioVersion = 15.0.26124.0
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaxLib.Common", "MaxLib.Common\MaxLib.Common.csproj", "{81B14E0B-2FB2-4F40-BEB6-14C7AB51094E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{81B14E0B-2FB2-4F40-BEB6-14C7AB51094E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81B14E0B-2FB2-4F40-BEB6-14C7AB51094E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81B14E0B-2FB2-4F40-BEB6-14C7AB51094E}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{81B14E0B-2FB2-4F40-BEB6-14C7AB51094E}.Debug|x64.Build.0 = Debug|Any CPU
+		{81B14E0B-2FB2-4F40-BEB6-14C7AB51094E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{81B14E0B-2FB2-4F40-BEB6-14C7AB51094E}.Debug|x86.Build.0 = Debug|Any CPU
+		{81B14E0B-2FB2-4F40-BEB6-14C7AB51094E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81B14E0B-2FB2-4F40-BEB6-14C7AB51094E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81B14E0B-2FB2-4F40-BEB6-14C7AB51094E}.Release|x64.ActiveCfg = Release|Any CPU
+		{81B14E0B-2FB2-4F40-BEB6-14C7AB51094E}.Release|x64.Build.0 = Release|Any CPU
+		{81B14E0B-2FB2-4F40-BEB6-14C7AB51094E}.Release|x86.ActiveCfg = Release|Any CPU
+		{81B14E0B-2FB2-4F40-BEB6-14C7AB51094E}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
