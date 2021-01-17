@@ -1,3 +1,4 @@
+using System.Runtime.Serialization;
 using System.ComponentModel;
 using System.Collections.Specialized;
 using System;
@@ -10,7 +11,47 @@ namespace MaxLib.Common.Collections
 {
     public class ObservableDictionary<Key, Value> : IDictionary<Key, Value>, INotifyCollectionChanged, INotifyPropertyChanged
     {
-        readonly Dictionary<Key, Value> dict = new Dictionary<Key, Value>();
+        readonly Dictionary<Key, Value> dict;
+
+        public ObservableDictionary()
+        {
+            dict = new Dictionary<Key, Value>();
+        }
+
+        public ObservableDictionary(IDictionary<Key,Value> dictionary)
+        {
+            dict = new Dictionary<Key, Value>(dictionary);
+        }
+
+        public ObservableDictionary(IEnumerable<KeyValuePair<Key, Value>> collection)
+        {
+            dict = new Dictionary<Key, Value>(collection);
+        }
+
+        public ObservableDictionary(IEqualityComparer<Key> comparer)
+        {
+            dict = new Dictionary<Key, Value>(comparer);
+        }
+
+        public ObservableDictionary(int capacity)
+        {
+            dict = new Dictionary<Key, Value>(capacity);
+        }
+
+        public ObservableDictionary(IDictionary<Key, Value> dictionary, IEqualityComparer<Key> comparer)
+        {
+            dict = new Dictionary<Key, Value>(dictionary, comparer);
+        }
+
+        public ObservableDictionary(IEnumerable<KeyValuePair<Key, Value>> collection, IEqualityComparer<Key> comparer)
+        {
+            dict = new Dictionary<Key, Value>(collection, comparer);
+        }
+
+        public ObservableDictionary(int capacity, IEqualityComparer<Key> comparer)
+        {
+            dict = new Dictionary<Key, Value>(capacity, comparer);
+        }
 
         public Value this[Key key]
         {
