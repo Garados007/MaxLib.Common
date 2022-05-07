@@ -58,9 +58,14 @@ namespace MaxLib.Common.Collections
             get => dict[key];
             set
             {
+                if (CollectionChanged != null && dict.TryGetValue(key, out Value old))
+                    CollectionChanged(this, new NotifyCollectionChangedEventArgs(
+                        NotifyCollectionChangedAction.Remove,
+                        new KeyValuePair<Key, Value>(key, old)
+                    ));
                 dict[key] = value;
                 CollectionChanged?.Invoke(this, new NotifyCollectionChangedEventArgs(
-                    NotifyCollectionChangedAction.Replace,
+                    NotifyCollectionChangedAction.Add,
                     new KeyValuePair<Key, Value>(key, value)
                 ));
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Count)));
